@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Montserrat", sans-serif;
+  box-sizing: border-box;
+  color: #f0f0f0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #020c01;
+  background: linear-gradient(180deg, #131218, #282b5f);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-bottom: 15px;
+    transition: transform 0.3s ease-out;
+
+}
+
+.profile-card {
+  background: linear-gradient(180deg, #0d4066, #002945);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease-out;
+}
+.profile-card p{
+  opacity: 90%;
+}
+.card-header {
+  padding: 10px;
+}
+
+.card-header p {
+  opacity: 70%;
+}
+.profile-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.image:hover  {
+  transform: scale(1.10);
+  transition: transform 0.3s ease-in;
+  transform: translateY(-10px);
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.bio {
+  margin-bottom: 15px;
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.social .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  color: #fff;
+  transition: all 200ms;
+  opacity: 0.95;
+}
+.social .icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.social .icon:hover {
+  transform: translateY(-4px) scale(1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  border: 1px solid #00a2f9;
+}
+.social .twitter {
+  color: #ffffff;
+}
+.social .linkedin {
+  color: #ffffff;
+}
+.social .github {
+  color: #000000;
+}
+
+@media (max-width: 520px) {
+  .profile-card {
+    padding: 20px;
+    border-radius: 14px;
+  }
+  .avatar {
+    width: 96px;
+    height: 96px;
+  }
+  .card-header .name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .profile-card {
+    width: 380px;
+  }
+}
+
+.social .icon:focus {
+  outline: 3px solid rgba(255, 255, 255, 0.22);
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .profile-card {
+    padding: 20px;
+    border-radius: 14px;
+     width: 60vw;
+     height: 60vh;
+  }
+  .bio {
+    display: none;
+  }
+  .image {
+    width: 800px;
+    height: 80px;
+  }
+  .card-header .name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .profile-card {
+    width: 380px;
+  }
+}
